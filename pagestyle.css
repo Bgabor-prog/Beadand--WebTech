@@ -1,0 +1,43 @@
+body
+{
+    background-image: url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+}
+
+h1
+{
+    font-family: 'Lucida Handwriting', cursive;
+    color:rgba(34, 36, 36, 0.822);
+    text-align: center;
+    font-size: 30px;
+    margin-top: 35px;
+}
+
+a
+{
+    font-family: 'Papyrus', fantasy;
+    font-size: 28px;
+    color: rgba(34, 36, 36, 0.822);
+    transition: 0.2s;
+}
+
+a:hover
+{
+    color: #ffffff;
+}
+
+.table
+{
+    margin-top: 55px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.td
+{
+    width:20%;
+    text-align: center;
+}

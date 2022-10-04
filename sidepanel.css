@@ -1,0 +1,31 @@
+.sidepanel 
+ {
+    width: 18%;
+    position: fixed;
+    z-index: 1;
+    height: 0px;
+    top: 250;
+    left: 48px;
+    background-color:rgba(34, 36, 36, 0.822,0.2);
+    overflow-y: hidden;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+.sidepanel a 
+{
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgba(34, 36, 36, 0.822);
+    display: block;
+    transition: 0.2s;
+    margin-left: 55px;
+}
+  
+.sidepanel a:hover 
+{
+    color: #ffffff;
+}
+  
+  

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="pagestyle.css"/>
+<link rel="stylesheet" type="text/css" href="sidepanel.css"/>
+<title>Valami</title>
+
+<style>
+hr
+{
+    width: 100%;
+    height: 5px;
+    color:rgba(34, 36, 36, 0.822);
+}
+
+</style>
+
+<script>
+    function openMenu() {
+      document.getElementById("Menu").style.height = "250px";
+    }
+    
+    function closeMenu() {
+      document.getElementById("Menu").style.height = "0";
+    }
+</script>
+
+</head>
+<body class="body">
+
+    <h1>History<br>of<br>Fifa</h1>
+      
+    <main>
+        <table class="table">
+            <tr>
+                <td class="td">
+                    <img src = "img/list.svg" alt="Menu svg" width="20" height="20"/>
+                    <a href="#" onclick="openMenu()">
+                        Menu
+                    </a>
+                </td>
+
+                <td class="td"> 
+                    <img src = "img/controller.svg" alt="Controller svg" width="20" height="20"/>
+                    <a href="oprendszer.html" target="display">
+                        Games
+                    </a>
+                </td>
+
+                <td class="td">
+                    <img src = "img/house-door-fill.svg" alt="House svg" width="20" height="20"/>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </td>
+
+                <td class="td"> 
+                    <img src = "img/currency-exchange.svg" alt="Money svg" width="20" height="20"/>
+                    <a href="asd" target="display">
+                        Prices
+                    </a>
+                </td>
+
+                <td class="td">
+                    <img src = "img/clock-history.svg" alt="History svg" width="20" height="20"/>
+                    <a href="OOP.html" target="display">
+                        History
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <hr/>
+
+        <div id="Menu" class="sidepanel">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+            <a href="javascript:void(0)" onclick="closeMenu()">x</a>
+        </div>
+    </main>   
+</body>
+</html>
