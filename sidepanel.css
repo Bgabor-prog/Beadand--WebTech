@@ -1,11 +1,19 @@
+.container
+{
+  width: 20%;
+  height: 250px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: fixed;
+}
+
 .sidepanel 
  {
-    width: 18%;
+    width: 20%;
     position: fixed;
     z-index: 1;
     height: 0px;
     top: 250;
-    left: 2%;
     background-color:rgba(34, 36, 36, 0.822,0.2);
     overflow-y: hidden;
     overflow-x: hidden;
@@ -20,7 +28,7 @@
     color: rgba(34, 36, 36, 0.822);
     display: block;
     transition: 0.2s;
-    margin-left: 30%;
+    text-align: center;
 }
   
 .sidepanel a:hover 
