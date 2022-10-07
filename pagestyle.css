@@ -1,10 +1,11 @@
 body
 {
-    background-image: url('img/background.jpg');
+    background-image: url('menuImg/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
     background-position: center;
+    overflow: hidden;
 }
 
 h1
@@ -26,7 +27,7 @@ a
 
 a:hover
 {
-    color: #ffffff;
+    color: #000000;
 }
 
 .table
@@ -40,4 +41,14 @@ a:hover
 {
     width:20%;
     text-align: center;
+}
+
+.displayDiv
+{
+    height: calc(65vh - 50px); 
+    width: 80%;
+    margin-left: 20%;
+    /* border: 2px black solid; */
+    opacity: 0;
+    transition: 1s;
 }

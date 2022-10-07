@@ -3,7 +3,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="pagestyle.css"/>
 <link rel="stylesheet" type="text/css" href="sidepanel.css"/>
-<title>Valami</title>
+<title>HistoryOfFifa</title>
 
 <style>
 hr
@@ -23,8 +23,13 @@ hr
     function closeMenu() {
       document.getElementById("Menu").style.height = "0";
     }
-</script>
 
+    function resetSize() {
+        document.getElementById("display").style.opacity = "0";
+    }
+
+</script>
+<script src="Handlers/displayLoadings.js"></script>
 </head>
 <body class="body">
 
@@ -34,36 +39,36 @@ hr
         <table class="table">
             <tr>
                 <td class="td">
-                    <img src = "img/list.svg" alt="Menu svg" width="20" height="20"/>
+                    <img src = "menuImg/list.svg" alt="Menu svg" width="20" height="20"/>
                     <a href="#" onclick="openMenu()">
                         Menu
                     </a>
                 </td>
 
                 <td class="td"> 
-                    <img src = "img/controller.svg" alt="Controller svg" width="20" height="20"/>
+                    <img src = "menuImg/controller.svg" alt="Controller svg" width="20" height="20"/>
                     <a href="oprendszer.html" target="display">
                         Games
                     </a>
                 </td>
 
                 <td class="td">
-                    <img src = "img/house-door-fill.svg" alt="House svg" width="20" height="20"/>
+                    <img src = "menuImg/house-door-fill.svg" alt="House svg" width="20" height="20"/>
                     <a href="index.html">
                         Home
                     </a>
                 </td>
 
                 <td class="td"> 
-                    <img src = "img/currency-exchange.svg" alt="Money svg" width="20" height="20"/>
+                    <img src = "menuImg/currency-exchange.svg" alt="Money svg" width="20" height="20"/>
                     <a href="asd" target="display">
                         Prices
                     </a>
                 </td>
 
                 <td class="td">
-                    <img src = "img/clock-history.svg" alt="History svg" width="20" height="20"/>
-                    <a href="OOP.html" target="display">
+                    <img src = "menuImg/clock-history.svg" alt="History svg" width="20" height="20"/>
+                    <a href="#" onclick="load_to_display()">
                         History
                     </a>
                 </td>
@@ -78,6 +83,8 @@ hr
             <a href="#">Contact</a>
             <a href="javascript:void(0)" onclick="closeMenu()">x</a>
         </div>
+
+        <div id="display" class="displayDiv"></div>
     </main>   
 </body>
 </html>
