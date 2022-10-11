@@ -5,19 +5,23 @@
   overflow-y: hidden;
   overflow-x: hidden;
   position: fixed;
+  text-align: center;
+  min-width: 200px;
 }
 
 .sidepanel 
  {
-    width: 20%;
-    position: fixed;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
     z-index: 1;
     height: 0px;
     top: 250;
     background-color:rgba(34, 36, 36, 0.822,0.2);
     overflow-y: hidden;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.7s;
   }
   
 .sidepanel a 

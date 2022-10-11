@@ -3,7 +3,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="pagestyle.css"/>
 <link rel="stylesheet" type="text/css" href="sidepanel.css"/>
-<title>HistoryOfFifa</title>
+<title style="text-shadow: 2px 2px 4px #000000;">HistoryOfFifa</title>
 
 <style>
 hr
@@ -17,14 +17,14 @@ hr
 
 <script>
     function openMenu() {
-      document.getElementById("Menu").style.height = "250px";
+        document.getElementById("Menu").style.height = "250px";
     }
     
     function closeMenu() {
-      document.getElementById("Menu").style.height = "0";
+        document.getElementById("Menu").style.height = "0";
     }
 
-    function resetSize() {
+    function resetSite() {
         document.getElementById("display").style.opacity = "0";
     }
 
@@ -47,28 +47,28 @@ hr
 
                 <td class="td"> 
                     <img src = "menuImg/controller.svg" alt="Controller svg" width="20" height="20"/>
-                    <a href="oprendszer.html" target="display">
+                    <a href="#" onclick="resetSite();load_Games();">
                         Games
                     </a>
                 </td>
 
                 <td class="td">
                     <img src = "menuImg/house-door-fill.svg" alt="House svg" width="20" height="20"/>
-                    <a href="index.html">
+                    <a href="#" onclick="resetSite();load_Home();">
                         Home
                     </a>
                 </td>
 
                 <td class="td"> 
                     <img src = "menuImg/currency-exchange.svg" alt="Money svg" width="20" height="20"/>
-                    <a href="asd" target="display">
+                    <a href="#" onclick="resetSite();load_Prices();">
                         Prices
                     </a>
                 </td>
 
                 <td class="td">
                     <img src = "menuImg/clock-history.svg" alt="History svg" width="20" height="20"/>
-                    <a href="#" onclick="load_to_display()">
+                    <a href="#" onclick="resetSite();load_History()">
                         History
                     </a>
                 </td>
@@ -81,15 +81,24 @@ hr
                     <div id="Menu" class="sidepanel">
                         <a href="#">asd</a>
                         <a href="#">asd</a>
-                        <a href="#">asd</a>
-                        <a href="#">asd</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
                         <a href="javascript:void(0)" onclick="closeMenu()">x</a> 
                     </div>
                 </td>
             </tr>
         </table>
 
-        <div id="display" class="displayDiv"></div>
+        <div id="display" class="displayDiv">
+            <h1>Welcome to the home page of Fifa games</h1>
+            <p style="font-size: 20px;">On my website you can learn about:</p>
+                <ol style="font-size: 20px;">
+                <li>The game history</li>
+                <li>The games that created over time</li>
+                <li>Prices and where you can buy them</li>
+                <li>Some additional information</li>
+            </ol>
+        </div>
     </main>   
 </body>
 </html>

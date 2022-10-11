@@ -6,6 +6,7 @@ body
     background-size:cover;
     background-position: center;
     overflow: hidden;
+    min-width: 1000px;
 }
 
 h1
@@ -22,7 +23,7 @@ a
     font-family: 'Papyrus', fantasy;
     font-size: 28px;
     color: rgba(34, 36, 36, 0.822);
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 a:hover
@@ -49,6 +50,7 @@ a:hover
     width: 80%;
     margin-left: 20%;
     /* border: 2px black solid; */
-    opacity: 0;
+    opacity: 1;
+    animation-fill-mode: forwards;
     transition: 1s;
 }
