@@ -1,7 +1,7 @@
 .container
 {
   width: 20%;
-  height: 250px;
+  height: 350px;
   overflow-y: hidden;
   overflow-x: hidden;
   position: fixed;
@@ -14,14 +14,15 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 70%;
     z-index: 1;
     height: 0px;
     top: 250;
     background-color:rgba(34, 36, 36, 0.822,0.2);
     overflow-y: hidden;
-    overflow-x: hidden;
     transition: 0.7s;
+    /* border:2px black solid; */
+    box-shadow: rgba(37, 37, 37, 0.2) 0px 2px 8px 0px;
   }
   
 .sidepanel a 
@@ -33,6 +34,7 @@
     display: block;
     transition: 0.2s;
     text-align: center;
+    padding-top: 10%;
 }
   
 .sidepanel a:hover 
