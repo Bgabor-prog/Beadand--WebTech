@@ -9,7 +9,7 @@ body
     min-width: 1000px;
 }
 
-h1
+.h1
 {
     font-family: 'Lucida Handwriting', cursive;
     color:rgba(34, 36, 36, 0.822);
@@ -24,6 +24,7 @@ a
     font-size: 28px;
     color: rgba(34, 36, 36, 0.822);
     transition: 0.5s;
+    text-decoration: none;
 }
 
 a:hover
@@ -53,4 +54,26 @@ a:hover
     opacity: 1;
     animation-fill-mode: forwards;
     transition: 1s;
+}
+
+.headline
+{
+    font-family: 'Lucida Handwriting', cursive;
+    color:rgba(34, 36, 36, 0.822);
+    font-size: 30px;
+    margin-top: 35.5px;
+    margin-left: 0.8%;
+}
+
+p
+{
+    font-family: 'Papyrus', fantasy;
+    font-size: 22px;
+    margin-left: 0.8%
+}
+
+li
+{
+    font-family: 'Papyrus', fantasy;
+    font-size: 22px;
 }

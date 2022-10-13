@@ -1,104 +1,104 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" type="text/css" href="pagestyle.css"/>
-<link rel="stylesheet" type="text/css" href="sidepanel.css"/>
-<title style="text-shadow: 2px 2px 4px #000000;">HistoryOfFifa</title>
+    <link rel="stylesheet" type="text/css" href="pagestyle.css" />
+    <link rel="stylesheet" type="text/css" href="sidepanel.css" />
+    <title style="text-shadow: 2px 2px 4px #000000;">HistoryOfFifa</title>
 
-<style>
-hr
-{
-    width: 100%;
-    height: 5px;
-    color:rgba(34, 36, 36, 0.822);
-}
+    <style>
+        hr {
+            width: 100%;
+            height: 5px;
+            color: rgba(34, 36, 36, 0.822);
+        }
+    </style>
 
-</style>
+    <script>
+        function openMenu() {
+            document.getElementById("Menu").style.height = "250px";
+        }
 
-<script>
-    function openMenu() {
-        document.getElementById("Menu").style.height = "250px";
-    }
-    
-    function closeMenu() {
-        document.getElementById("Menu").style.height = "0";
-    }
+        function closeMenu() {
+            document.getElementById("Menu").style.height = "0";
+        }
 
-    function resetSite() {
-        document.getElementById("display").style.opacity = "0";
-    }
+        function resetSite() {
+            document.getElementById("display").style.opacity = "0";
+        }
 
-</script>
-<script src="Handlers/displayLoadings.js"></script>
+    </script>
+    <script src="Handlers/displayLoadings.js"></script>
 </head>
+
 <body class="body">
 
-    <h1>History<br>of<br>Fifa</h1>
-      
+    <h1 class="h1">History<br>of<br>Fifa</h1>
+
     <main>
         <table class="table">
             <tr>
                 <td class="td">
-                    <img src = "menuImg/list.svg" alt="Menu svg" width="20" height="20"/>
+                    <img src="menuImg/list.svg" alt="Menu svg" width="20" height="20" />
                     <a href="#" onclick="openMenu()">
                         Menu
                     </a>
                 </td>
 
-                <td class="td"> 
-                    <img src = "menuImg/controller.svg" alt="Controller svg" width="20" height="20"/>
+                <td class="td">
+                    <img src="menuImg/controller.svg" alt="Controller svg" width="20" height="20" />
                     <a href="#" onclick="resetSite();load_Games();">
                         Games
                     </a>
                 </td>
 
                 <td class="td">
-                    <img src = "menuImg/house-door-fill.svg" alt="House svg" width="20" height="20"/>
+                    <img src="menuImg/house-door-fill.svg" alt="House svg" width="20" height="20" />
                     <a href="#" onclick="resetSite();load_Home();">
                         Home
                     </a>
                 </td>
 
-                <td class="td"> 
-                    <img src = "menuImg/currency-exchange.svg" alt="Money svg" width="20" height="20"/>
+                <td class="td">
+                    <img src="menuImg/currency-exchange.svg" alt="Money svg" width="20" height="20" />
                     <a href="#" onclick="resetSite();load_Prices();">
                         Prices
                     </a>
                 </td>
 
                 <td class="td">
-                    <img src = "menuImg/clock-history.svg" alt="History svg" width="20" height="20"/>
+                    <img src="menuImg/clock-history.svg" alt="History svg" width="20" height="20" />
                     <a href="#" onclick="resetSite();load_History()">
                         History
                     </a>
                 </td>
             </tr>
         </table>
-        <hr/>
+        <hr />
         <table>
             <tr>
                 <td class="container">
                     <div id="Menu" class="sidepanel">
-                        <a href="#">asd</a>
-                        <a href="#">asd</a>
+                        <a href="#">News</a>
+                        <a href="#">Survey</a>
                         <a href="#">About</a>
                         <a href="#">Contact</a>
-                        <a href="javascript:void(0)" onclick="closeMenu()">x</a> 
+                        <a href="javascript:void(0)" onclick="closeMenu()">x</a>
                     </div>
                 </td>
             </tr>
         </table>
-
         <div id="display" class="displayDiv">
-            <h1>Welcome to the home page of Fifa games</h1>
-            <p style="font-size: 20px;">On my website you can learn about:</p>
-                <ol style="font-size: 20px;">
+            <h1 class="headline">Welcome to the home page of Fifa games</h1>
+            <p style="font-size: 22px;">On my website you can learn about:</p>
+            <ol style="font-size: 22px;margin-left: 0.8%">
                 <li>The game history</li>
                 <li>The games that created over time</li>
                 <li>Prices and where you can buy them</li>
                 <li>Some additional information</li>
             </ol>
         </div>
-    </main>   
+    </main>
 </body>
+
 </html>
