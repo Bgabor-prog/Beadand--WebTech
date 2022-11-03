@@ -28,7 +28,7 @@
         }
 
     </script>
-    <script src="Handlers/displayLoadings.js"></script>
+    <script src="../Handlers/displayLoadings.js"></script>
 </head>
 
 <body class="body">
@@ -39,35 +39,35 @@
         <table class="table">
             <tr>
                 <td class="td">
-                    <img src="menuImg/list.svg" alt="Menu svg" width="20" height="20" />
+                    <img src="../menuImg/list.svg" alt="Menu svg" width="20" height="20" />
                     <a href="#" onclick="openMenu()">
                         Menu
                     </a>
                 </td>
 
                 <td class="td">
-                    <img src="menuImg/controller.svg" alt="Controller svg" width="20" height="20" />
+                    <img src="../menuImg/controller.svg" alt="Controller svg" width="20" height="20" />
                     <a href="#" onclick="resetSite();load_Games();">
                         Games
                     </a>
                 </td>
 
                 <td class="td">
-                    <img src="menuImg/house-door-fill.svg" alt="House svg" width="20" height="20" />
+                    <img src="../menuImg/house-door-fill.svg" alt="House svg" width="20" height="20" />
                     <a href="#" onclick="resetSite();load_Home();">
                         Home
                     </a>
                 </td>
 
                 <td class="td">
-                    <img src="menuImg/currency-exchange.svg" alt="Money svg" width="20" height="20" />
+                    <img src="../menuImg/currency-exchange.svg" alt="Money svg" width="20" height="20" />
                     <a href="#" onclick="resetSite();load_Prices();">
                         Prices
                     </a>
                 </td>
 
                 <td class="td">
-                    <img src="menuImg/clock-history.svg" alt="History svg" width="20" height="20" />
+                    <img src="../menuImg/clock-history.svg" alt="History svg" width="20" height="20" />
                     <a href="#" onclick="resetSite();load_History()">
                         History
                     </a>
@@ -79,10 +79,10 @@
             <tr>
                 <td class="container">
                     <div id="Menu" class="sidepanel">
-                        <a href="#">News</a>
-                        <a href="#">Survey</a>
-                        <a href="#">About</a>
-                        <a href="#">Contact</a>
+                        <a href="#" onclick="resetSite(),load_News()">News</a>
+                        <a href="#" onclick="resetSite(),load_Survey()">Survey</a>
+                        <a href="#" onclick="resetSite(),load_About()">About</a>
+                        <a href="#" onclick="resetSite(),load_Contact()">Contact</a>
                         <a href="#" onclick="closeMenu()">x</a>
                     </div>
                 </td>

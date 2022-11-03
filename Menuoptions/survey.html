@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h2 {
+            font-family: Garamond, serif;
+        }
+
+        li {
+            font-family: Garamond, serif;
+            font-size: 18px;
+        }
+
+        p {
+            font-family: Garamond, serif;
+            font-size: 22px;
+        }
+
+        .hrdiv {
+            box-shadow: rgba(12, 12, 12, 0.5) 0px 2px 8px 0px;
+            height: 2px;
+        }
+
+        .button {
+            background: darkred;
+            border-radius: 999px;
+            box-shadow: rgb(117, 1, 1) 0px 2px 8px 0px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-family: Garamond, serif;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 20px;
+            opacity: 1;
+            outline: 0 solid transparent;
+            padding: 8px 18px;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            width: fit-content;
+            word-break: break-word;
+            border: 0;
+            text-decoration: none;
+            margin-top: 2%;
+        }
+
+        .button:hover {
+            background: rgb(173, 2, 2);
+            font-size: 19px;
+        }
+
+        .radioerror {
+            color:red;
+            opacity: 0;
+            margin-top: 2%;
+            font-family: Garamond, serif;
+        }
+    </style>
+
+    <script src="../Handlers/validation.js" defer></script>
+</head>
+
+<body>
+    <h2>Please take a moment and rate my website:<br> Under the survey you can make a remark if you have any!</h2>
+
+    <p>Helper:</p>
+    <ul>
+        <li><b>5</b> - Very much</li>
+        <li><b>4</b> - It was good</li>
+        <li><b>3</b> - Neutral</li>
+        <li><b>2</b> - Work more</li>
+        <li><b>1</b> - Disliked</li>
+    </ul>
+
+    <p>How much did you liked the usability of the website?</p>
+    <form>
+
+        <input type="radio" id="number1" name="number" value="1" >
+        <label for="number1">1</label><br>
+        <input type="radio" id="number2" name="number" value="2">
+        <label for="number2">2</label><br>
+        <input type="radio" id="number3" name="number" value="3">
+        <label for="number3">3</label><br>
+        <input type="radio" id="number4" name="number" value="4">
+        <label for="number4">4</label><br>
+        <input type="radio" id="number5" name="number" value="5">
+        <label for="number5">5</label><br>
+        <span id="error1" class="radioerror"><b>You must choose an option!</b></span>
+
+        <p>Did you find the information useful?</p>
+
+        <input type="radio" id="number1" name="numberone" value="1">
+        <label for="number1">1</label><br>
+        <input type="radio" id="number2" name="numberone" value="2">
+        <label for="number2">2</label><br>
+        <input type="radio" id="number3" name="numberone" value="3">
+        <label for="number3">3</label><br>
+        <input type="radio" id="number4" name="numberone" value="4">
+        <label for="number4">4</label><br>
+        <input type="radio" id="number5" name="numberone" value="5">
+        <label for="number5">5</label><br>
+        <span id="error2" class="radioerror"><b>You must choose an option!</b></span>
+
+        <p> Was the information intresting?</p>
+
+        <input type="radio" id="number1" name="numbertwo" value="1">
+        <label for="number1">1</label><br>
+        <input type="radio" id="number2" name="numbertwo" value="2">
+        <label for="number2">2</label><br>
+        <input type="radio" id="number3" name="numbertwo" value="3">
+        <label for="number3">3</label><br>
+        <input type="radio" id="number4" name="numbertwo" value="4">
+        <label for="number4">4</label><br>
+        <input type="radio" id="number5" name="numbertwo" value="5">
+        <label for="number5">5</label><br>
+        <span id="error3" class="radioerror"><b>You must choose an option!</b></span>
+
+
+        <p> Was the animation made the usage fluid?</p>
+
+        <input type="radio" id="number1" name="numberthree" value="1">
+        <label for="number1">1</label><br>
+        <input type="radio" id="number2" name="numberthree" value="2">
+        <label for="number2">2</label><br>
+        <input type="radio" id="number3" name="numberthree" value="3">
+        <label for="number3">3</label><br>
+        <input type="radio" id="number4" name="numberthree" value="4">
+        <label for="number4">4</label><br>
+        <input type="radio" id="number5" name="numberthree" value="5">
+        <label for="number">5</label><br>
+        <span id="error4" class="radioerror"><b>You must choose an option!</b></span><br>
+
+        <input id="submitButton" type="button" value="Submit" class="button">
+    </form>
+    <br>
+    <br>
+    <div class="hrdiv"></div>
+
+    <h2 style="text-align: center;">Your advice:</h2>
+    <form style="text-align: center;">
+        <label id="text" for="advice">Write here:</label><br>
+        <textarea id="textBox" rows="5" cols="70" placeholder="Fill this area to submit a message"></textarea><br>
+        <input id="textSubmitButton" type="button" value="Submit" class="button">
+    </form>
+</body>
+
+</html>
